@@ -1,0 +1,23 @@
+Filter接口
+介绍:
+作用:
+1,解决post请求方案下,中文转码问题
+2,防止用户恶意登录,通过过滤器进行,从而使得Servlet安全访问.
+
+
+
+web.xml配置
+<filter>
+	<filter-name>xxxxxx</filter-name>
+	<filter-class>xxxxx<filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>xxxxxx</filter-name>
+	<url-pattern>/*<url-patter> <!--拦截所有请求的页面-->
+</filter-mapping
+
+多个过滤器,如何设置执行顺序
+* 拦截路径范围大的,先执行
+
+
+使用过滤器,进行用户恶意登录判断.

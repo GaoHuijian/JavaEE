@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  
+  <!-- 配置 findEmp servlet请求路径 -->
+  <servlet>
+   <servlet-name>findEmp</servlet-name>
+   <servlet-class>com.bjpowernode.servlet.FindEmpServelt</servlet-class>
+   <!-- 初始化参数标签 -->
+   <init-param>
+     <param-name>userName</param-name>
+     <param-value>root</param-value>
+   </init-param>
+   
+   <init-param>
+     <param-name>password</param-name>
+     <param-value>123</param-value>
+   </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>findEmp</servlet-name>
+   <!-- http://localhost:8080/01-servlet/emp/find -->
+   <url-pattern>/emp/find</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 配置 insertEmpServlet -->
+  <servlet>
+    <servlet-name>insertEmp</servlet-name>
+    <servlet-class>com.bjpowernode.servlet.InsertEmpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertEmp</servlet-name>
+    <url-pattern>/emp/insert</url-pattern>
+  </servlet-mapping>
+  
+   <!-- 配置工程的初始化参数 -->
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,3 @@
+work Ä¿Â¼ Çå³ý.
+server.xml utf-8
+db brower
