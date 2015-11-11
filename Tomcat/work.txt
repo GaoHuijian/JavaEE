@@ -1,4 +1,0 @@
-history.back()
-location.href("/xxxxx.html")
-history.go(-1) ºóÍË
-history.go(1)	Ç°½ø

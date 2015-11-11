@@ -84,6 +84,14 @@ DOM
 
 * 控制页面控件对象的状态,防止用户出错,这叫页面控制逻辑
 
+* JSON
+	* 格式
+	* JSON与XML比较
+		* xml 配置文件
+		* json 数据交换
+
+* javaScript如何将json字符串转为json对象  : eval();
+
 
 
 
