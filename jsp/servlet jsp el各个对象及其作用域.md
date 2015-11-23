@@ -1,27 +1,27 @@
-Servlet¸÷¸ö¶ÔÏó:
+Servletå„ä¸ªå¯¹è±¡:
 
-ServletContext		application  ËùÓĞÓÃ»§¹²Ïí¶ÔÏó
-HttpSession 		session	 µ¥¸öÓÃ»§
-HttpServletRequest  	request 	 µ¥¸öÇëÇó
-PageContext			page		 µ±Ç°Ò³Ãæ
-Cookie			cooki		 ÓÃ»§ä¯ÀÀÆ÷
-ServletConfig				 µ¥¸öServlet
-ServletResponse				 µ¥¸öÏìÓ¦
+ServletContext		application  æ‰€æœ‰ç”¨æˆ·å…±äº«å¯¹è±¡
+HttpSession 		session	 å•ä¸ªç”¨æˆ·
+HttpServletRequest  	request 	 å•ä¸ªè¯·æ±‚
+PageContext			page		 å½“å‰é¡µé¢
+Cookie			cooki		 ç”¨æˆ·æµè§ˆå™¨
+ServletConfig				 å•ä¸ªServlet
+ServletResponse				 å•ä¸ªå“åº”
 
-JSPÄÚÖÃ¶ÔÏó:
+JSPå†…ç½®å¯¹è±¡:
 
 		out			JspWriter
 		response		HttpServletResponse
 		config		ServletConfig
-		exception		Throwable
-		page			this (HttpJspBase) ºÜÉÙÓÃ
+		exception		Throwable           é»˜è®¤æ²¡æœ‰æ­¤å¯¹è±¡ is ErrorPage="false"
+		page			this (HttpJspBase) å¾ˆå°‘ç”¨
 
 		pageContext		PageContext
 		request		HttpServletRequest
 		session		HttpSession
 		application		ServletContext
 
-EL±í´ïÊ½¶ÔÏó:
+ELè¡¨è¾¾å¼å¯¹è±¡:
 
 
 EL							JSP
@@ -32,12 +32,12 @@ requestScope					request
 pageScope						pageContext
 
 
-* ELÖ»ÄÜÍ¨Öªtomcat¶ÁÈ¡ËÄ´ó×÷ÓÃÓòÖĞµÄÊı¾İ,µ«²»ÄÜĞŞ¸ÄËÄ´ó×÷ÓÃÓòÖĞµÄÄÚÈİ
-* ${EL×÷ÓÃÓòÃû³Æ,¹Ø¼ü×Ö}
-  ${¹Ø¼ü×Ö}  :tomcat 1) pageContext 2) request 3) session 4) application
+* ELåªèƒ½é€šçŸ¥tomcatè¯»å–å››å¤§ä½œç”¨åŸŸä¸­çš„æ•°æ®,ä½†ä¸èƒ½ä¿®æ”¹å››å¤§ä½œç”¨åŸŸä¸­çš„å†…å®¹
+* ${ELä½œç”¨åŸŸåç§°,å…³é”®å­—}
+  ${å…³é”®å­—}  :tomcat 1) pageContext 2) request 3) session 4) application
 
 
 
-EL Òş²Ø¶ÔÏó
-pageContext  :¶ÁÈ¡JSPÖĞpageContextÖĞ»ù±¾ĞÅÏ¢
-param		 : Í¨Öªtomcatµ÷ÓÃrequest.getParmeter("²ÎÊıĞÅÏ¢")¶ÁÈ¡ÇëÇó²ÎÊıÖµ
+EL éšè—å¯¹è±¡
+pageContext  :è¯»å–JSPä¸­pageContextä¸­åŸºæœ¬ä¿¡æ¯
+param		 : é€šçŸ¥tomcatè°ƒç”¨request.getParmeter("å‚æ•°ä¿¡æ¯")è¯»å–è¯·æ±‚å‚æ•°å€¼

@@ -15,7 +15,7 @@ jsp构成
 	page指令  	<%@ page language = "java" %>
 	page指令  	<%@ page import = "java.util.*,java.text.*" %>
 	page指令  	<%@ page contentType = "text/html;charset =GBK" %>
-	include指令	<%@ include file="xxxx" %>  静态包含
+	include指令	<%@ include file="xxxx" %>  静态包含,一个字节码文件,导入源代码,必须注意变量名称,以及方法名称.
 	taglib指令   <%/@taglib url="xxx" prifix="xxx" %>
 
 ###page指令
@@ -30,7 +30,7 @@ jsp构成
 	4.设置传送参数：		<jsp:param>
 
 	5.页面跳转：		<jsp:forward>
-	6.包含页面：		<jsp:include> 动态包含
+	6.包含页面：		<jsp:include> 动态包含,多个字节码文件,导入结果
 	7.使用appleth或javabean：<jsp:plugin>
 	8.错误提示：		<jsp:fallback>
 	
